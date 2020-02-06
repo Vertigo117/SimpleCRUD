@@ -7,6 +7,7 @@ import { PaymentDetailsComponent } from './payment-details/payment-details.compo
 import { PaymentDetailsListComponent } from './payment-details/payment-details-list/payment-details-list.component';
 import { PaymentDetailComponent } from './payment-details/payment-detail/payment-detail.component';
 import { PaymentDetailService } from './shared/payment-detail.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PaymentDetailService } from './shared/payment-detail.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [PaymentDetailService],
   bootstrap: [AppComponent]
